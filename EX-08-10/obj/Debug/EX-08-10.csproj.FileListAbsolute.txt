@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\bin\Debug\EX-08-10.exe.config
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\bin\Debug\EX-08-10.exe
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\bin\Debug\EX-08-10.pdb
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX-08-10.csprojAssemblyReference.cache
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX_08_10.Form1.resources
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX_08_10.Properties.Resources.resources
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX-08-10.csproj.GenerateResource.cache
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX-08-10.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX-08-10.exe
+C:\Users\User\Desktop\home learning (part 2)\Programarea obiect orientata I\Projects\EX-08-10\obj\Debug\EX-08-10.pdb
