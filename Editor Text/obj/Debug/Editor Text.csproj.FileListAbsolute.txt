@@ -1,0 +1,10 @@
+D:\Projects\C#\Editor Text\bin\Debug\Editor Text.exe.config
+D:\Projects\C#\Editor Text\bin\Debug\Editor Text.exe
+D:\Projects\C#\Editor Text\bin\Debug\Editor Text.pdb
+D:\Projects\C#\Editor Text\obj\Debug\Editor Text.csprojAssemblyReference.cache
+D:\Projects\C#\Editor Text\obj\Debug\Editor_Text.Form1.resources
+D:\Projects\C#\Editor Text\obj\Debug\Editor_Text.Properties.Resources.resources
+D:\Projects\C#\Editor Text\obj\Debug\Editor Text.csproj.GenerateResource.cache
+D:\Projects\C#\Editor Text\obj\Debug\Editor Text.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Editor Text\obj\Debug\Editor Text.exe
+D:\Projects\C#\Editor Text\obj\Debug\Editor Text.pdb
