@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonReset = new System.Windows.Forms.Button();
             this.labelA = new System.Windows.Forms.Label();
@@ -44,8 +47,12 @@
             this.textBoxB = new System.Windows.Forms.TextBox();
             this.textBoxC = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonOpenClose = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.clearGraphic = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonReset
@@ -134,6 +141,7 @@
             this.buttonDraw.TabIndex = 3;
             this.buttonDraw.Text = "DRAW";
             this.buttonDraw.UseVisualStyleBackColor = false;
+            this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
             // 
             // buttonClear
             // 
@@ -203,16 +211,63 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 163);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 163);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(343, 238);
             this.dataGridView1.TabIndex = 23;
+            // 
+            // buttonOpenClose
+            // 
+            this.buttonOpenClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonOpenClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOpenClose.Location = new System.Drawing.Point(359, 216);
+            this.buttonOpenClose.Name = "buttonOpenClose";
+            this.buttonOpenClose.Size = new System.Drawing.Size(29, 26);
+            this.buttonOpenClose.TabIndex = 24;
+            this.buttonOpenClose.Text = "->";
+            this.buttonOpenClose.UseVisualStyleBackColor = false;
+            this.buttonOpenClose.Click += new System.EventHandler(this.buttonOpenClose_Click);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(394, 12);
+            this.chart1.Name = "chart1";
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(323, 357);
+            this.chart1.TabIndex = 25;
+            this.chart1.Text = "chart1";
+            // 
+            // clearGraphic
+            // 
+            this.clearGraphic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.clearGraphic.Font = new System.Drawing.Font("Perpetua Titling MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearGraphic.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clearGraphic.Location = new System.Drawing.Point(394, 375);
+            this.clearGraphic.Name = "clearGraphic";
+            this.clearGraphic.Size = new System.Drawing.Size(323, 31);
+            this.clearGraphic.TabIndex = 4;
+            this.clearGraphic.Text = "CLEAR GRAPHIC";
+            this.clearGraphic.UseVisualStyleBackColor = false;
+            this.clearGraphic.Click += new System.EventHandler(this.clearGraphic_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 424);
+            this.ClientSize = new System.Drawing.Size(380, 424);
+            this.Controls.Add(this.clearGraphic);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.buttonOpenClose);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxC);
             this.Controls.Add(this.textBoxB);
@@ -229,6 +284,7 @@
             this.Text = "Equations";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +306,9 @@
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonDraw;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonOpenClose;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button clearGraphic;
     }
 }
 

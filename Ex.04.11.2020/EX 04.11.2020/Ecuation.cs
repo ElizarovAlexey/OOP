@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace EX_04._11._2020
 {
@@ -95,6 +96,22 @@ namespace EX_04._11._2020
                 line[i] += valueList[i];
             }
             table.Rows.Add(line);
+
+        }
+
+        public void DrawGraphic(Chart chart)
+        {
+            double[] x = new double[] {-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            double[] y = new double[x.Length - 1];
+
+            for (int i = 0; i < y.Length; i++)
+            {
+                y[i] = A * Math.Pow(x[i], 2) + B * x[i] + C;
+            }
+
+            chart.Series[0].ChartType = SeriesChartType.Spline;
+            for (int i = 0; i < y.Length; i++)
+                chart.Series[0].Points.AddXY(x[i], y[i]);
 
         }
 

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace EX_04._11._2020
@@ -14,6 +8,7 @@ namespace EX_04._11._2020
     public partial class Form1 : Form
     {
         DataTable table = new DataTable();
+        private bool button = false; 
         public Form1()
         {
             InitializeComponent();
@@ -63,9 +58,72 @@ namespace EX_04._11._2020
         private void buttonClear_Click(object sender, EventArgs e)
         {
             table.Clear();
+            chart1.Series[0].Points.Clear();
             textBoxA.Text = "0";
             textBoxB.Text = "0";
             textBoxC.Text = "0";
+        }
+
+        private void Animation(object sender, EventArgs e)
+        {
+            if (this.Width < 400 && button == true)
+            {
+                while (!(this.Width == 750))
+                {
+                    this.Width += 2;
+                    if (this.Width == 748)
+                    {
+                        buttonOpenClose.Text = "<-";
+                        button = false;
+                    }
+                }
+            }
+
+            if (this.Width > 500 && button == true)
+            {
+                while (!(this.Width == 396))
+                {
+                    this.Width -= 2;
+                    if (this.Width == 398)
+                    {
+                        buttonOpenClose.Text = "->";
+                        button = false;
+                    }
+                }
+            }
+        }
+
+        private void buttonOpenClose_Click(object sender, EventArgs e)
+        {
+            button = !button;
+            Animation(sender, e);
+        }
+
+        private void buttonDraw_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBoxA.Text);
+            int b = int.Parse(textBoxB.Text);
+            int c = int.Parse(textBoxC.Text);
+
+            Ecuation ecuation = new Ecuation(a, b, c);
+            if (this.Width < 420)
+            {
+                while (!(this.Width == 750))
+                {
+                    this.Width += 1;
+                    if (this.Width == 749)
+                    {
+                        buttonOpenClose.Text = "<-";
+                        button = false;
+                    }
+                }
+            }
+            ecuation.DrawGraphic(chart1);
+        }
+
+        private void clearGraphic_Click(object sender, EventArgs e)
+        {
+            chart1.Series[0].Points.Clear();
         }
     }
 }
