@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\Editor grafic\bin\Debug\Editor grafic.exe.config
+C:\Users\User\Desktop\Editor grafic\bin\Debug\Editor grafic.exe
+C:\Users\User\Desktop\Editor grafic\bin\Debug\Editor grafic.pdb
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor grafic.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor_grafic.Form1.resources
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor_grafic.Properties.Resources.resources
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor grafic.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor grafic.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor grafic.exe
+C:\Users\User\Desktop\Editor grafic\obj\Debug\Editor grafic.pdb
